@@ -1,0 +1,19 @@
+<idea-plugin>
+        <id>org.intellij.sdk.action</id>
+        <name>SDK: Action Sample</name>
+        <depends>com.intellij.modules.platform</depends>
+
+        <description>
+                Demonstrates automatically showing a popup at IDE startup.
+        </description>
+
+        <change-notes>
+        </change-notes>
+
+        <vendor url="https://plugins.jetbrains.com">IntelliJ Platform SDK</vendor>
+
+        <!-- Register the startup activity -->
+        <extensions defaultExtensionNs="com.intellij">
+                <postStartupActivity implementation="com.intellij.sdk.MyStartupActivity"/>
+        </extensions>
+</idea-plugin>
